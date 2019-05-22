@@ -18,10 +18,10 @@ end
 def find_the_cheese(array)
   cheese_types = ["cheddar", "gouda", "camembert"]
   if array.include?(cheese_types[0])
-    array.find { |cheese| cheese = cheese_types[0] }
+    array.find { |cheese| cheese == cheese_types[0] }
   elsif array.include?(cheese_types[1])
-    array.find { |cheese| cheese = cheese_types[1] }
+    array.find { |cheese| cheese == cheese_types[1] }
   else array.include?(cheese_types[2])
-    array.find { |cheese| cheese = cheese_types[2] }
+    array.find { |cheese| cheese == cheese_types[2] }
   end
 end
